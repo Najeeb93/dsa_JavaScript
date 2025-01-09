@@ -5,11 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insert Element in Array</title>
     <script>
-        let data = [60,30,10,67,40];
-        let newElemnt = 70;
+        // let data = [60,30,10,67,40];
+        // let newElemnt = 70;
+        // let positionElm = 2;
+        // for(let i = data.length - 1; i >= 0; i--) {
+        //     console.log(data[i] );
+        //     if(i >= positionElm) {
+        //         data[i + 1] = data[i] (
+        //         if(i == positionElm) {
+        //             data[i] = newElemnt
+        //         }
+        //                }
+        // }
+        // console.log(data);
+        function getElement() {
+             let data = [60,30,10,67,40];
+            let newEl = document.getElementById("newEl").value
+            let positonElm = document.getElementById("position").value
+            for(let i = data.length -1; i >= 0; i--) {
+                if(i >= positonElm) {
+                    data[i + 1] = data[i];
+                    if(i == positonElm) {
+                        data[i] = newEl
+                    }
+                }
+            }
+            console.log(data );
+            
+        }
     </script>
 </head>
 <body>
-    
+    <input type="text" id="position" placeholder="Enter Position">
+    <input type="text" id="newEl" placeholder="Enter new element">
+
+    <button onclick="getElement()">Insert</button>
 </body>
 </html>
