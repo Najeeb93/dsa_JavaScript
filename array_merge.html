@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merge Two in Array</title>
+    <script>
+        let data = [3,4,7,12,22,50];
+        let data2 = [20,30,40,50];
+        let result = [];
+        for(let i = 0; i < data.length; i++) {
+            result[i] = data[i]
+        }
+        for(let i = 0; i < data2.length; i++) {
+            result[data.length + i] = data2[i]; 
+        }
+        console.log(result);
+    </script>
 </head>
 <body>
     
