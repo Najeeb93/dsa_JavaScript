@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Element in Array</title>
     <script>
-        let data = [20,40,60,10,30,70,80,99];
-        let item = 30;
-        for(let i = 0; i < data.length; i++) {
-            console.log(data[i]);
+        function searchElement() {
+            let data = [20,40,60,10,30,70,80,99];
+            let item = document.getElementById("ele").value
+            let index = undefined;
+            for(let i = 0; i < data.length; i++) {
+                if(data[i] ==item) {
+                    index = i
+                }
+            }
+            console.log(data);
+            console.log(index);
+
         }
+        
     </script>
 </head>
 <body>
-    
+    <input type="text" id="ele" placeholder="Enter value">
+    <button onclick="searchElement()">Search Element</button>
 </body>
 </html>
