@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursion</title>
     <script>
-        
+        function apple(x) {
+            console.log(x);
+            if(x < 10) {
+                apple(x+1)
+            }
+        }
+        let data = 0;
+        apple(data);
     </script>
 </head>
 <body>
