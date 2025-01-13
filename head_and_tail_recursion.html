@@ -27,7 +27,14 @@
         secondFunction();
         console.log("Back to First Function");
     }
-    
+    function secondFunction() {
+        console.log("Inside Second Function");
+        thirdFunction();
+    }
+    function thirdFunction() {
+        console.log("Inside Third Function");
+    }
+    firstFunction();
     </script>
   </head>
   <body></body>
