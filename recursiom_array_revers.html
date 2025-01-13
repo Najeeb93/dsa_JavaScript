@@ -6,7 +6,19 @@
     <title>Recursion Array with Reverse</title>
     <script>
         let data = [5,12,65,,89,0];
-        
+        let temp;
+        function reversArray(data,start,end) {
+            console.log(data);
+            
+            if(start <= end) {
+
+                temp = data[start];
+                data[start] = data[end];
+                data[end] = temp;
+                reversArray(data, start + 1, end - 1)
+            }
+        }
+        reversArray(data,0,data.length-1)
     </script>
 </head>
 <body>
