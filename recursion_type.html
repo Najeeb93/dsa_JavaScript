@@ -10,11 +10,16 @@
         function buyApple(x) {
             if(x > 0) {
                 console.log("I have", x, "Rs", totalapple);
+                buyMore(x -10)   
+            } else {
+                console.log("I don't have more money", totalapple);
                 
             }
-
         }
-        buyApple(money);
+        function buyMore(x) {
+            totalapple++;
+            buyApple(x - 5);
+        }
     </script>
 </head>
 <body>
