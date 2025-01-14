@@ -17,6 +17,8 @@
                 data[currentSize] = newVal;
                 currentSize += 1;
                 document.getElementById("newEl").value = "";
+                console.log("Element added");
+                    
             }
         }
 
@@ -31,7 +33,7 @@
       
         function display() {
             for(let i = 0; i <= currentSize-1; i++) {
-                console.log(data[i]);
+                console.log("Stack element no", i, "and value is", data[i]);
             }
         }
         
