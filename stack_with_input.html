@@ -8,7 +8,8 @@
                 let data = [];
         let currentSize = data.length;
         let max = 5;
-        function push(newVal) {
+        function push() {
+            let newVal = document.getElementById("newEl").value
             if(currentSize >= max) {
                 alert("Stack is full you can not" + newVal)
             }
@@ -24,14 +25,19 @@
                 alert("Stack is already empty")
             }
         }
-        console.log(data);
+      
+        function display() {
+            for(let i = 0; i <= currentSize-1; i++) {
+                console.log(data[i]);
+            }
+        }
         
     </script>
 </head>
 <body>
     <input type="text" placeholder="Enter Stack Element" id="newEl">
-    <button>Add element to Stack</button>
-    <button>Remove element to Stack</button>
+    <button onclick="push()">Add element to Stack</button>
+    <button onclick="pop()">Remove element to Stack</button>
     <button>Display All elements of Stack</button>
 </body>
 </html>
