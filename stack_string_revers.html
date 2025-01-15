@@ -15,10 +15,18 @@
             currentSize -= 1;
             data.length = currentSize;
         }
+
+        function reversStr(item) {
+            for(let i = 0; i < item.length; i++) {
+                push(item[i]);
+            }
+        }
         
         let str = "Hello";
         str = str.split("");
-        console.log(str);
+        reversStr(str);
+        console.log("is Stack", data);
+        
         
     </script>
 </head>
