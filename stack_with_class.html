@@ -5,34 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stack with class in JavaScript</title>
     <script>
-        class Stack{
-            item = [];
-            currentSize;
-            maxSize;
-            constructor(size){
-                this.maxSize = size;
-                this.currentSize = this.item.length; 
+        // class Stack{
+        //     item = [];
+        //     currentSize;
+        //     maxSize;
+        //     constructor(size){
+        //         this.maxSize = size;
+        //         this.currentSize = this.item.length; 
                 
-            }
-            push(newVal) {
-                if(this.currentSize >= this.maxSize) {
-                    alert("stack is full")
-                } else {
-                    this.item[this.currentSize] = newVal;
-                    this.currentSize++;
-                }
-            }
-            pop() {
+        //     }
+        //     push(newVal) {
+        //         if(this.currentSize >= this.maxSize) {
+        //             alert("stack is full")
+        //         } else {
+        //             this.item[this.currentSize] = newVal;
+        //             this.currentSize++;
+        //         }
+        //     }
+        //     pop() {
 
-            }
-            display() {
-                console.log(this.item);
+        //     }
+        //     display() {
+        //         console.log(this.item);
                 
+        //     }
+        // }
+        //     str1 =  new Stack(5);
+        //     str1.push(20);
+        //     str1.display();
+
+        class Calculater {
+            add(a, b) {
+                return a + b;
+            }
+            subract(a, b) {
+                return a - b;
+            }
+            multiplaye(a, b) {
+                return a * b;
             }
         }
-            str1 =  new Stack(5);
-            str1.push(20);
-            str1.display();
+        const cal = new Calculater();
+        console.log(cal.add(2, 2));
+        console.log(cal.subract(3, 2));
+        console.log(cal.multiplaye(2, 3));
     </script>
 </head>
 <body>
