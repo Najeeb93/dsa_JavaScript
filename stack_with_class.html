@@ -11,20 +11,28 @@
             maxSize;
             constructor(size){
                 this.maxSize = size;
-                this.currentSize = item.length; 
+                this.currentSize = this.item.length; 
                 
             }
-            push() {
-
+            push(newVal) {
+                if(this.currentSize >= this.maxSize) {
+                    alert("stack is full")
+                } else {
+                    this.item[this.currentSize] = newVal;
+                    this.currentSize++;
+                }
             }
             pop() {
 
             }
             display() {
-
+                console.log(this.item);
+                
             }
         }
-            str1 =  new Stack();
+            str1 =  new Stack(5);
+            str1.push(20);
+            str1.display();
     </script>
 </head>
 <body>
