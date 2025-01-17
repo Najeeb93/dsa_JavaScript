@@ -7,6 +7,12 @@
     <script>
         let queue = [];
         let currentSize = queue.length;
+        let maxSize = 5;
+        
+        function enqueue(newVal) {
+            queue[currentSize] = newVal;
+        }
+        enqueue(10);
     </script>
 </head>
 <body>
