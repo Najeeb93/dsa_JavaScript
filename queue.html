@@ -11,8 +11,13 @@
         
         function enqueue(newVal) {
             queue[currentSize] = newVal;
+            currentSize++;
+        }
+        function display() {
+            console.log(queue);
         }
         enqueue(10);
+        display();
     </script>
 </head>
 <body>
