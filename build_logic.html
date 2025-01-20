@@ -12,12 +12,16 @@
         let evenArr = [];
         for(let i = 0; i < data.length; i++) {
             if(data[i] % 2 == 0) {
-                console.log(data[i]);
-                evenArr.push(data[i]);
-                
+                evenArr.push(data[i]*2);
             }        
         }
-        console.log(evenArr);
+        let count = 0;
+        for(let i = 0; i < evenArr.length; i++) {
+            count++;
+        }
+
+        console.log(count);
+        
     </script>
 </head>
 <body>
