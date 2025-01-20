@@ -10,14 +10,12 @@
 
         let data = [10,19,6,18,45,68,90,35,100];
         let evenArr = [];
+        let count = 0;
         for(let i = 0; i < data.length; i++) {
             if(data[i] % 2 == 0) {
                 evenArr.push(data[i]*2);
+                count++;
             }        
-        }
-        let count = 0;
-        for(let i = 0; i < evenArr.length; i++) {
-            count++;
         }
 
         console.log(count);
