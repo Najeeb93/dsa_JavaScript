@@ -11,12 +11,12 @@
                 return false
             }
             for(chart of str1) {
-                console.log(chart);
-                
-            }
-            
+                objStr1[chart] = (objStr1[chart] || 0) + 1
         }
-        console.log(checkAnagram('listen', 'silent') );
+        console.log(objStr1);
+        
+    }
+        console.log(checkAnagram('hello', 'ehllo') );
         
     </script>
 </head>
