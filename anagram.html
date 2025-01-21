@@ -13,8 +13,14 @@
             for(chart of str1) {
                 objStr1[chart] = (objStr1[chart] || 0) + 1
         }
-        console.log(objStr1);
-        
+        // console.log(objStr1);
+        for(chart of str2) {
+            if(!objStr1[chart]) {
+                return false;
+            }
+            objStr1[chart]--
+        }
+        return true;        
     }
         console.log(checkAnagram('hello', 'ehllo') );
         
