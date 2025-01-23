@@ -14,7 +14,10 @@
             if(!strObj[key]) {
                 strObj[key] = 0;
             };
-            
+            strObj[key]++;
+            if(maxKey == '' || strObj[key] >  strObj[maxKey]) {
+                maxKey = key;
+            }
         }
     </script>
 </head>
