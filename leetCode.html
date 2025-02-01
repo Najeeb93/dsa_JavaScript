@@ -13,6 +13,17 @@
         // const f =createHelloWorld();
         // console.log(f());
         
+        function createCounter(n) {
+            let counter = -1
+            function inner() {
+                counter++
+                return (n + counter)
+            }
+            return inner;
+        }
+        const counter = createCounter(10);
+        console.log(counter());
+        console.log(counter());
         
     </script>
 </head>
