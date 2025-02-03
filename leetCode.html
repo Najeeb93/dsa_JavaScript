@@ -36,6 +36,17 @@
         // }
         // const num = fun();
         // console.log(num(2, 3));
+
+        //=======================================//
+        let createCounter = function(n) {
+            return function() {
+                return n++
+            }
+        }
+        const counter = createCounter(10);
+        console.log(counter(10));
+        console.log(counter(10));
+        
     </script>
 </head>
 <body>
