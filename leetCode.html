@@ -136,6 +136,18 @@
         //     return accum + curr;
         // };
         // console.log(reduce(nums, fn, 0));
+
+        //===================================//
+
+        let argumentLength = function(...args) {
+            let count = 0;
+            for(let i = 0; i < args.length; i++) {
+                count += 1;
+            }
+            return count
+        };
+        console.log(argumentLength(1,2,3));
+        
         
     </script>
 </head>
