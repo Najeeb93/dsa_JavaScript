@@ -121,21 +121,21 @@
 
         //=======================================//
 
-        // let reduce = function(nums, fn, init) {
-        //     let total = init
-        //     for(let i = 0; i < nums.length; i++) {
-        //         total = fn(total, nums[i])
-        //         // console.log(fn);
+        let reduce = function(nums, fn, init) {
+            let total = init
+            for(let i = 0; i < nums.length; i++) {
+                total = fn(total, nums[i])
+                // console.log(fn);
                 
-        //     }
-        //     return total;
-        // };
+            }
+            return total;
+        };
         
-        // let nums = [1,2,3,4];
-        // let fn = function sum(accum, curr) {
-        //     return accum + curr;
-        // };
-        // console.log(reduce(nums, fn));
+        let nums = [1,2,3,4];
+        let fn = function sum(accum, curr) {
+            return accum + curr;
+        };
+        console.log(reduce(nums, fn, 0));
         
     </script>
 </head>
