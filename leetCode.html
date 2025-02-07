@@ -185,7 +185,7 @@
         // console.log("Task-2");
         // console.log("Task-3");
         const myPromise = new Promise(function(resolve, reject){
-            let fileLoader = true
+            let fileLoader = false
             if(fileLoader) {
                 resolve("File Loaded")
             }else {
@@ -195,6 +195,10 @@
         myPromise.then(function(value){
             console.log(value);
         })
+        .catch(function(error){
+            console.log(error)}
+        );
+        
     </script>
 </head>
 <body>
