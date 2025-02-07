@@ -184,6 +184,17 @@
         // })
         // console.log("Task-2");
         // console.log("Task-3");
+        const myPromise = new Promise(function(resolve, reject){
+            let fileLoader = true
+            if(fileLoader) {
+                resolve("File Loaded")
+            }else {
+                reject("File Not Loaded")
+            }
+        })
+        myPromise.then(function(value){
+            console.log(value);
+        })
     </script>
 </head>
 <body>
