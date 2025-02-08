@@ -217,7 +217,11 @@
                 timer = setTimeout(() => fn(...args), t)
             }
         };
-        
+        const log = debounce(console.log, 100);
+        log('Hello, world!'); 
+        log('Hello, world!'); 
+        log('Hello, world!'); 
+
     </script>
 </head>
 <body>
