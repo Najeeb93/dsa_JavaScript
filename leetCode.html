@@ -232,8 +232,12 @@
     // })()
     var scope = 'js scope';
     function checkScope() {
-        
-    }
+        var scope = 'javascript scope';
+        function f() {
+            return scope
+        }
+        return f
+    };
     </script>
 </head>
 <body>
