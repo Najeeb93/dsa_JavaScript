@@ -298,6 +298,8 @@
     //=================================//
     let fragment = createDocumentFragment();
     for(let i = 1; i <= 100; i++) {
-        let para = document.createElement('p')
+        let para = document.createElement('p');
+        para.textContent = 'This is para' + i;
+        fragment.appendChild(para);
     }
     </script> 
