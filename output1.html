@@ -307,7 +307,9 @@
     // document.body.appendChild(fragment)
 
     //==================================//
-    
+
+    // JavaScript Interview Question
+
     //normal function
     // function f(a, b) {
     //     const sum = a + b;
@@ -321,4 +323,11 @@
     //     return sum;
     // };
     // console.log(f(2, 3));
+
+    //Immediate invoke
+    let f = function(a, b) {
+        const sum = a + b
+        return sum
+    }(2,6)
+    console.log(f);
     </script> 
