@@ -381,9 +381,9 @@
              str = str.map((curElem) =>
             curElem.replace(curElem[0], curElem[0].toUpperCase())
         );
-        str = str.join("");
+        str = `#${str.join("")}`;
         console.log(str)
-        // return str;
+        return str;
     }
     console.log(generateHash("my name is ahmed technical"));
     
