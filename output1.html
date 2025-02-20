@@ -378,6 +378,11 @@
              }
              
              str = str.split(" ")
+             str = str.map((curElem) =>
+            curElem.replace(curElem[0], curElem[0].toUpperCase())
+        );
+        console.log(str)
+        return str;
     }
     
     </script> 
