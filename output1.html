@@ -491,7 +491,9 @@ const countVowels = (str) => {
     let arr = str.split(" ");
     let count = 0;
     for(let char of arr){
-        if(vowels.includes(char.toLowerCase()))
+        if(vowels.includes(char.toLowerCase())){
+            count++;
+        }
     } 
 }
     </script> 
