@@ -626,7 +626,9 @@ const calFactor = (num) => {
     }
     for(let i = 1; i <= num; i++) {
         if(num % i === 0) {
-            
+            console.log(i, 'is a factor');
+        } else {
+            console.log(i, 'is not a factor');
         }
     }
 }
