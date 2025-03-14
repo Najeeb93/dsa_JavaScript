@@ -639,7 +639,9 @@
 const bigNum = (arrOfNum) => {
 let bNum = arrOfNum[0];
 for(let i = 0; i < arrOfNum.length; i++) {
-    
+    if(arrOfNum[i] > bNum) {
+        bNum = arrOfNum[i];
+    }
 }
-}
+};
     </script> 
