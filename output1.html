@@ -653,7 +653,7 @@ const evenNum = (arr) => {
     let evenNumber = [];
     let oddNumber = [];
     for(let i = 0; i < arr.length; i++) {
-        if(arr % 2 == 1) {
+        if(arr[i] % 2 === 0 ) {
             evenNumber.push(arr[i]);
         } else {
             oddNumber.push(arr[i]);
@@ -661,4 +661,6 @@ const evenNum = (arr) => {
     }
     return evenNumber;
 };
+console.log(evenNum([32, 22, 11, 25, 23, 11, 53]));
+
     </script> 
