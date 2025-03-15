@@ -652,7 +652,9 @@
 const evenNum = (arr) => {
     let evenNumber = [];
     for(let i = 0; i < arr.length; i++) {
-        
+        if(arr % 2 == 1) {
+            evenNumber.push(arr[i]);
+        }
     }
 }
     </script> 
