@@ -713,7 +713,8 @@
 new Promise(function (reslove, reject) {
     setTimeout(function() {
         console.log("Async 2 resloved");
-        
-    })
+        reslove()
+    }, 1000)
+    
 })
     </script> 
