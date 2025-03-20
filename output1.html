@@ -721,23 +721,23 @@
 
 //-----------------------------------------//
 
-function findMode(arr) {
-    let count = {};
-    let maxNum = 0;
-    let mode;
+// function findMode(arr) {
+//     let count = {};
+//     let maxNum = 0;
+//     let mode;
 
-    for(let element of arr) {
-        if(count[element]) {
-            count[element]++;
-            } else {
-                count[element] = 1;
-                }
-                if(count[element] > maxNum) {
-                    maxNum = count[element];
-                    mode = element;
-                    }
-    }
-    return mode;
-};
-console.log(findMode([1, 2, 2, 3, 1, 4, 2]));
-    </script> 
+//     for(let element of arr) {
+//         if(count[element]) {
+//             count[element]++;
+//             } else {
+//                 count[element] = 1;
+//                 }
+//                 if(count[element] > maxNum) {
+//                     maxNum = count[element];
+//                     mode = element;
+//                     }
+//     }
+//     return mode;
+// };
+// console.log(findMode([1, 2, 2, 3, 1, 4, 2]));
+//     </script> 
